@@ -1,0 +1,1457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary meta tags -->
+    <title>
+      Remote Carihers Case Study - Technical Product Manager Portfolio
+    </title>
+    <meta
+      name="title"
+      content="Remote Carihers Case Study - Technical Product Manager Portfolio"
+    />
+    <meta
+      name="description"
+      content="Complete case study of Remote Carihers - A career platform for women providing verified remote jobs and skill-building resources."
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Custom styles for case study -->
+    <style>
+      html {
+        font-size: 70%;
+      }
+
+      @media (max-width: 768px) {
+        html {
+          font-size: 65%;
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slideInRight {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      .case-study-hero {
+        background: linear-gradient(
+          135deg,
+          #7c2d12 0%,
+          #9a3412 50%,
+          #c2410c 100%
+        );
+        padding: 120px 0;
+        position: relative;
+        overflow: hidden;
+        color: white;
+      }
+
+      .hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+          radial-gradient(
+            circle at 20% 80%,
+            rgba(194, 65, 12, 0.35) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(154, 52, 18, 0.3) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 40% 40%,
+            rgba(124, 45, 18, 0.25) 0%,
+            transparent 50%
+          );
+      }
+
+      .floating-shapes {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .shape {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        animation: float 20s ease-in-out infinite;
+      }
+
+      .shape:nth-child(1) {
+        width: 300px;
+        height: 300px;
+        top: 10%;
+        left: -5%;
+        animation-delay: 0s;
+      }
+
+      .shape:nth-child(2) {
+        width: 200px;
+        height: 200px;
+        top: 60%;
+        right: -5%;
+        animation-delay: 5s;
+      }
+
+      .shape:nth-child(3) {
+        width: 150px;
+        height: 150px;
+        bottom: 20%;
+        left: 10%;
+        animation-delay: 10s;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(5deg);
+        }
+      }
+
+      .hero-content {
+        animation: fadeInUp 1s ease-out;
+        position: relative;
+        z-index: 1;
+      }
+
+      .case-study-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 80px 20px;
+      }
+
+      .case-study-section {
+        margin-bottom: 5rem;
+        animation: fadeInUp 0.8s ease-out;
+        animation-fill-mode: both;
+      }
+
+      .case-study-section:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+      .case-study-section:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+      .case-study-section:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+      .case-study-section:nth-child(4) {
+        animation-delay: 0.8s;
+      }
+      .case-study-section:nth-child(5) {
+        animation-delay: 1s;
+      }
+      .case-study-section:nth-child(6) {
+        animation-delay: 1.2s;
+      }
+
+      .section-title {
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: #1a202c;
+        margin-bottom: 2rem;
+        position: relative;
+        background: linear-gradient(135deg, #fb923c, #fdba74);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, #fb923c, #fdba74);
+        border-radius: 2px;
+      }
+      .case-study-hero {
+        background: linear-gradient(135deg, #7c2d12 0%, #c2410c 100%);
+        padding: 80px 0;
+        text-align: center;
+      }
+
+      .case-study-content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 60px 20px;
+      }
+
+      .case-study-section {
+        margin-bottom: 4rem;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1a202c;
+        margin-bottom: 1.5rem;
+        position: relative;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, #fb923c, #fdba74);
+      }
+
+      .overview-section {
+        background: #f8fafc;
+        border-radius: 16px;
+        padding: 3rem;
+        margin-bottom: 3rem;
+        border: 2px solid #e2e8f0;
+      }
+
+      .target-users {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+      }
+
+      .user-card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        border: 1px solid #e2e8f0;
+      }
+
+      .user-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(45deg, #fb923c, #fdba74);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        font-size: 1.5rem;
+        color: white;
+      }
+
+      .problem-solution {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        margin: 3rem 0;
+      }
+
+      .problem-card,
+      .solution-card {
+        background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+        border-radius: 20px;
+        padding: 3rem;
+        box-shadow:
+          0 20px 60px rgba(0, 0, 0, 0.1),
+          0 8px 32px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .ps-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2.5rem;
+        margin: 3rem 0;
+      }
+
+      .ps-card {
+        background: linear-gradient(145deg, #ffffff 0%, #fff7ed 100%);
+        border-radius: 24px;
+        padding: 2.5rem;
+        border: 1px solid rgba(251, 146, 60, 0.2);
+        box-shadow:
+          0 16px 40px rgba(124, 45, 18, 0.08),
+          0 6px 18px rgba(124, 45, 18, 0.06);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .ps-card::before {
+        content: "";
+        position: absolute;
+        top: -60px;
+        right: -60px;
+        width: 160px;
+        height: 160px;
+        background: radial-gradient(
+          circle,
+          rgba(251, 146, 60, 0.12) 0%,
+          transparent 70%
+        );
+      }
+
+      .ps-card-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .ps-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #fb923c, #fdba74);
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 1.2rem;
+        box-shadow: 0 8px 20px rgba(251, 146, 60, 0.25);
+      }
+
+      .ps-title {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #1a202c;
+      }
+
+      .ps-body {
+        color: #374151;
+        line-height: 1.7;
+        font-size: 1.2rem;
+      }
+
+      .ps-list {
+        margin: 1.5rem 0 0;
+        padding-left: 1.2rem;
+        color: #4b5563;
+        line-height: 1.8;
+      }
+
+      .problem-card::before,
+      .solution-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          rgba(255, 255, 255, 0.8) 50%,
+          transparent 100%
+        );
+      }
+
+      .problem-card:hover,
+      .solution-card:hover {
+        transform: translateY(-8px);
+        box-shadow:
+          0 32px 80px rgba(0, 0, 0, 0.15),
+          0 16px 48px rgba(0, 0, 0, 0.1);
+      }
+
+      .problem-card {
+        border-left: 5px solid #fb923c;
+      }
+
+      .solution-card {
+        border-left: 5px solid #fdba74;
+      }
+
+      .card-title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .problem-title {
+        color: #fb923c;
+      }
+
+      .solution-title {
+        color: #fdba74;
+      }
+
+      .card-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+      }
+
+      .feature-card {
+        background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+        border-radius: 16px;
+        padding: 2.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        box-shadow:
+          0 8px 32px rgba(0, 0, 0, 0.08),
+          0 4px 16px rgba(0, 0, 0, 0.04);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .feature-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #fb923c, #fdba74);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+      }
+
+      .feature-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .feature-card:hover {
+        transform: translateY(-12px) scale(1.02);
+        box-shadow:
+          0 25px 80px rgba(0, 0, 0, 0.15),
+          0 10px 40px rgba(0, 0, 0, 0.1);
+        border-color: rgba(5, 150, 105, 0.2);
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #fb923c, #fdba74);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        color: white;
+        font-size: 1.8rem;
+        box-shadow: 0 8px 24px rgba(5, 150, 105, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .feature-card:hover .feature-icon {
+        transform: scale(1.1);
+        box-shadow: 0 12px 32px rgba(5, 150, 105, 0.4);
+      }
+
+      .feature-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #1a202c;
+        margin-bottom: 1rem;
+      }
+
+      .feature-description {
+        color: #4a5568;
+        line-height: 1.6;
+      }
+
+      .goal-section {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 3rem;
+        margin: 3rem 0;
+        border: 2px solid #fed7aa;
+        box-shadow: 0 10px 30px rgba(251, 146, 60, 0.08);
+      }
+
+      .impact-metrics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+      }
+
+      .metric-card {
+        background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+        border-radius: 16px;
+        padding: 3rem 2rem;
+        text-align: center;
+        box-shadow:
+          0 8px 32px rgba(0, 0, 0, 0.08),
+          0 4px 16px rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .metric-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #fb923c, #fdba74);
+      }
+
+      .metric-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow:
+          0 20px 60px rgba(0, 0, 0, 0.12),
+          0 8px 32px rgba(0, 0, 0, 0.08);
+      }
+
+      .metric-number {
+        font-size: 3rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, #fb923c, #fdba74);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 1rem;
+        display: block;
+        line-height: 1;
+      }
+
+      .metric-label {
+        color: #4a5568;
+        font-weight: 500;
+      }
+
+      .quote-section {
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        border-radius: 20px;
+        padding: 4rem 3rem;
+        margin: 4rem 0;
+        text-align: center;
+        border: 1px solid rgba(5, 150, 105, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .quote-section::before {
+        content: '"';
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 8rem;
+        color: rgba(5, 150, 105, 0.1);
+        font-family: serif;
+        line-height: 1;
+      }
+
+      .quote-text {
+        font-size: 1.6rem;
+        font-style: italic;
+        line-height: 1.7;
+        color: #2d3748;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 1;
+        font-weight: 300;
+      }
+
+      .quote-author {
+        font-size: 1.1rem;
+        color: #fb923c;
+        font-weight: 600;
+        position: relative;
+        z-index: 1;
+      }
+
+      .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+      }
+
+      .gallery-image {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+        cursor: zoom-in;
+      }
+
+      .gallery-image:hover {
+        transform: scale(1.02);
+      }
+
+      /* Modal for image zoom */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 8px;
+      }
+
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .problem-solution {
+          grid-template-columns: 1fr !important;
+          gap: 2rem !important;
+        }
+
+        .section-title {
+          font-size: 2rem !important;
+        }
+
+        .features-grid {
+          grid-template-columns: 1fr !important;
+        }
+
+        .target-users {
+          grid-template-columns: 1fr !important;
+        }
+
+        .impact-metrics {
+          grid-template-columns: 1fr !important;
+        }
+
+        .image-gallery {
+          grid-template-columns: 1fr !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <strong>Hannah Asunmo</strong>
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="index.html" class="logo">
+              <strong>Hannah Asunmo</strong>
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="index.html#about-me" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="index.html#skills-tools" class="navbar-link">Skills</a>
+            </li>
+
+            <li>
+              <a href="index.html#project-label" class="navbar-link"
+                >Projects</a
+              >
+            </li>
+
+            <li>
+              <a href="index.html#contact" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:hannahasunmo@gmail.com" class="contact-link"
+              >hannahasunmo@gmail.com</a
+            >
+
+            <a href="tel:+2348031364612" class="contact-link"
+              >(+234) 8031364612</a
+            >
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/hannahasunmo"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:hannahasunmo@gmail.com" class="social-link">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <!-- Case Study Hero -->
+    <section class="case-study-hero">
+      <div class="hero-background"></div>
+      <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+      </div>
+
+      <div class="container hero-content">
+        <!-- Project Badge -->
+        <div style="text-align: center; margin-top: 4rem; margin-bottom: 2rem">
+          <span
+            style="
+              display: inline-block;
+              background: linear-gradient(45deg, #fb923c, #fdba74);
+              color: white;
+              padding: 0.5rem 1.5rem;
+              border-radius: 50px;
+              font-size: 0.9rem;
+              font-weight: 600;
+              box-shadow: 0 4px 12px rgba(251, 146, 60, 0.3);
+            "
+          >
+            Case Study
+          </span>
+        </div>
+
+        <h1
+          style="
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-align: center;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+          "
+        >
+          Remote Carihers
+          <span
+            style="
+              display: block;
+              font-size: 1.8rem;
+              font-weight: 400;
+              color: rgba(255, 255, 255, 0.9);
+              margin-top: 1rem;
+            "
+          >
+            Career Platform for Women
+          </span>
+        </h1>
+
+        <p
+          style="
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+          "
+        >
+          Empowering women with verified remote career opportunities and
+          comprehensive skill-building resources to break through workplace
+          barriers.
+        </p>
+
+        <!-- Key Metrics -->
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+          "
+        >
+          <div style="text-align: center">
+            <div
+              style="
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #34d399;
+                line-height: 1;
+              "
+            >
+              65%
+            </div>
+            <div
+              style="
+                font-size: 0.9rem;
+                color: rgba(255, 255, 255, 0.7);
+                margin-top: 0.5rem;
+              "
+            >
+              Increased Confidence
+            </div>
+          </div>
+          <div style="text-align: center">
+            <div
+              style="
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #ffedd5;
+                line-height: 1;
+              "
+            >
+              ∞
+            </div>
+            <div
+              style="
+                font-size: 0.9rem;
+                color: rgba(255, 255, 255, 0.7);
+                margin-top: 0.5rem;
+              "
+            >
+              Verified Opportunities
+            </div>
+          </div>
+          <div style="text-align: center">
+            <div
+              style="
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #fbbf24;
+                line-height: 1;
+              "
+            >
+              0
+            </div>
+            <div
+              style="
+                font-size: 0.9rem;
+                color: rgba(255, 255, 255, 0.7);
+                margin-top: 0.5rem;
+              "
+            >
+              Cost to Access
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <div class="case-study-content">
+      <!-- Overview -->
+      <section class="case-study-section">
+        <h2 class="section-title">Project Overview</h2>
+        <div class="overview-section">
+          <p
+            style="
+              font-size: 1.2rem;
+              line-height: 1.7;
+              color: #4a5568;
+              margin-bottom: 2rem;
+            "
+          >
+            Remote Carihers is a digital career platform for women that provides
+            access to verified remote jobs and internship opportunities from
+            female-friendly companies, alongside resources and courses that help
+            women build in-demand skills and improve employability.
+          </p>
+        </div>
+
+        <div class="image-gallery">
+          <img
+            src="./assets/images/RemoteCarihers1.png"
+            alt="Remote Carihers Screen 1"
+            class="gallery-image"
+            onclick="openModal(this)"
+          />
+        </div>
+      </section>
+
+      <!-- Target Users -->
+      <section class="case-study-section">
+        <h2 class="section-title">Target Users</h2>
+        <div class="target-users">
+          <div class="user-card">
+            <div class="user-icon">👩</div>
+            <h3
+              style="
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #1a202c;
+                margin-bottom: 1rem;
+              "
+            >
+              Young Professionals
+            </h3>
+            <p style="color: #4a5568; line-height: 1.6; margin: 0">
+              Women between the ages of 18 and 45 actively seeking remote jobs
+              or internships.
+            </p>
+          </div>
+
+          <div class="user-card">
+            <div class="user-icon">🔄</div>
+            <h3
+              style="
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #1a202c;
+                margin-bottom: 1rem;
+              "
+            >
+              Career Switchers
+            </h3>
+            <p style="color: #4a5568; line-height: 1.6; margin: 0">
+              Beginners and career switchers entering remote work.
+            </p>
+          </div>
+
+          <div class="user-card">
+            <div class="user-icon">💼</div>
+            <h3
+              style="
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #1a202c;
+                margin-bottom: 1rem;
+              "
+            >
+              Experienced Professionals
+            </h3>
+            <p style="color: #4a5568; line-height: 1.6; margin: 0">
+              Experienced professionals transitioning to flexible, remote roles.
+            </p>
+          </div>
+
+          <div class="user-card">
+            <div class="user-icon">📚</div>
+            <h3
+              style="
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #1a202c;
+                margin-bottom: 1rem;
+              "
+            >
+              Upskill Seekers
+            </h3>
+            <p style="color: #4a5568; line-height: 1.6; margin: 0">
+              Women who want to upskill to improve their employability.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="image-gallery">
+        <img
+          src="./assets/images/RemoteCarihers2.png"
+          alt="Remote Carihers Screen 2"
+          class="gallery-image"
+          onclick="openModal(this)"
+        />
+      </div>
+
+      <!-- Problem & Solution -->
+      <section class="case-study-section">
+        <h2 class="section-title">The Problem & Solution</h2>
+        <div class="ps-grid">
+          <article class="ps-card">
+            <div class="ps-card-header">
+              <span class="ps-badge">!</span>
+              <h3 class="ps-title">The Problem</h3>
+            </div>
+            <p class="ps-body">
+              As a leader of young wives in my church and a mother myself, I
+              kept hearing the same concern from women after childbirth: "I
+              can't leave my baby, but I still want to work." Some women were
+              forced to leave their jobs because it didn't allow flexibility,
+              and their current income couldn't cover the cost of a nanny or
+              creche. Others who had no job wanted to support their families but
+              didn't know where to find safe, flexible remote work or free
+              resources to build the right skills.
+            </p>
+            <p class="ps-body" style="margin-top: 1.5rem">
+              Unverified, scattered remote roles created friction. Paywalls
+              blocked access to credible opportunities. There was no trusted hub
+              that combined jobs with free skill resources.
+            </p>
+          </article>
+
+          <article class="ps-card">
+            <div class="ps-card-header">
+              <span class="ps-badge">✓</span>
+              <h3 class="ps-title">The Solution</h3>
+            </div>
+            <p class="ps-body">
+              Remote Carihers curates verified remote jobs and internships from
+              female-friendly global companies, and pairs them with free
+              resources and courses to build in-demand skills. Applications stay
+              external, keeping the platform lightweight and aligned with
+              real-world hiring.
+            </p>
+            <p class="ps-body" style="margin-top: 1.5rem">
+              Verified listings only, so women can trust what they see. A clear
+              application flow without added friction. Free skill-building
+              content to improve employability.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- The Goal -->
+      <section class="case-study-section">
+        <h2 class="section-title">The Goal</h2>
+        <div class="goal-section">
+          <p
+            style="
+              font-size: 1.1rem;
+              line-height: 1.7;
+              color: #2d3748;
+              margin-bottom: 2rem;
+            "
+          >
+            I set out to build a focused MVP that would do the following:
+          </p>
+          <ul style="color: #4a5568; line-height: 1.8; margin: 0">
+            <li style="margin-bottom: 1rem">
+              <strong>Surface only verified remote jobs and internships</strong>
+              through a simple, searchable job board.
+            </li>
+            <li style="margin-bottom: 1rem">
+              <strong>Remove friction from job discovery</strong> with clear job
+              details and external application flows.
+            </li>
+            <li>
+              <strong>Support women at different career stages</strong> with a
+              free, curated resource hub for skill learning and building.
+            </li>
+          </ul>
+          <p
+            style="
+              font-size: 1.1rem;
+              line-height: 1.7;
+              color: #2d3748;
+              margin-top: 2rem;
+            "
+          >
+            This goal directly shaped the MVP features: a trust-led Home
+            experience, a lightweight Remote Jobs & Internships board, a
+            Resources hub for upskilling, and minimal Settings for
+            personalization.
+          </p>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="case-study-section">
+        <h2 class="section-title">Key Features</h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🏠</div>
+            <h3 class="feature-title">Home</h3>
+            <p class="feature-description">
+              Helps users quickly understand the platform's value and discover
+              the latest verified remote jobs at a glance.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">💼</div>
+            <h3 class="feature-title">Remote Jobs & Internships</h3>
+            <p class="feature-description">
+              Allows users to browse, filter, and evaluate verified remote
+              opportunities quickly, then apply externally with minimal
+              friction.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3 class="feature-title">Resources</h3>
+            <p class="feature-description">
+              Provides free, curated learning content to help women build the
+              skills needed to qualify for remote roles.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">⚙️</div>
+            <h3 class="feature-title">Settings</h3>
+            <p class="feature-description">
+              Gives users lightweight control over their profile, job
+              preferences, and notifications to keep the experience relevant.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="image-gallery">
+        <img
+          src="./assets/images/RemoteCarihers3.png"
+          alt="Remote Carihers Screen 3"
+          class="gallery-image"
+          onclick="openModal(this)"
+        />
+      </div>
+
+      <!-- My Role -->
+      <section class="case-study-section">
+        <h2 class="section-title">My Role</h2>
+        <ul style="color: #4a5568; line-height: 1.8; font-size: 1.1rem">
+          <li style="margin-bottom: 1rem">
+            <strong>Conducted informal user research</strong> via conversations
+            with women.
+          </li>
+          <li style="margin-bottom: 1rem">
+            <strong
+              >Defined the product scope, MVP and made intentional
+              trade-offs</strong
+            >
+            to maintain focus and speed.
+          </li>
+          <li style="margin-bottom: 1rem">
+            <strong>Designed the information architecture</strong> to support
+            fast, intuitive job discovery.
+          </li>
+          <li style="margin-bottom: 1rem">
+            <strong
+              >Prototyped the app using Claude.ai
+
+          </li>
+          <li>
+            <strong
+              >Built a cleaner, more refined version using Lovable, a no-code tool.
+
+          </li>
+        </ul>
+      </section>
+
+      <!-- Results -->
+      <section class="case-study-section">
+        <h2 class="section-title">Results</h2>
+
+        <div class="impact-metrics">
+          <div class="metric-card">
+            <div class="metric-number">65%</div>
+            <div class="metric-label">
+              Increased Confidence in Remote Job Applications
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">100%</div>
+            <div class="metric-label">Free Platform Access</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">∞</div>
+            <div class="metric-label">Verified Remote Opportunities</div>
+          </div>
+        </div>
+
+        <div
+          style="
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+          "
+        >
+          <ul
+            style="
+              color: #4a5568;
+              line-height: 1.8;
+              margin: 0;
+              font-size: 1.1rem;
+            "
+          >
+            <li style="margin-bottom: 1rem">
+              <strong>Reduced job search friction</strong> by giving women a
+              trusted, centralized place to discover verified remote jobs
+              suitable for caregiving responsibilities.
+            </li>
+            <li style="margin-bottom: 1rem">
+              <strong
+                >Enabled women, especially mothers to pursue flexible
+                work</strong
+              >
+              without childcare costs, with 65% of users reporting increased
+              confidence in applying for remote roles.
+            </li>
+            <li style="margin-bottom: 1rem">
+              <strong
+                >Demonstrated ability to move from problem → PRD → prototype
+                quickly</strong
+              >, showcasing how AI and no-code tools can shorten the build
+              cycle.
+            </li>
+            <li>
+              <strong
+                >Showcased ability to turn women's experiences into a
+                user-centered product</strong
+              >.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Quote -->
+      <section class="case-study-section">
+        <div class="quote-section">
+          <p class="quote-text">
+            "Every problem contains within itself the seeds of its own
+            solution."
+          </p>
+          <p class="quote-author">- Remote Carihers Development</p>
+        </div>
+      </section>
+
+      <!-- Links -->
+      <section class="case-study-section">
+        <div
+          style="
+            text-align: center;
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 12px;
+          "
+        >
+          <h3
+            style="
+              font-size: 1.3rem;
+              font-weight: 600;
+              color: #1a202c;
+              margin-bottom: 1.5rem;
+            "
+          >
+            Learn More
+          </h3>
+          <div
+            style="
+              display: flex;
+              gap: 1rem;
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <a
+              href="https://claude.ai/public/artifacts/196f2d05-5e2f-4905-adf5-16b898a51d98"
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                background: #7c3aed;
+                color: white;
+                padding: 0.75rem 1.5rem;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 500;
+                transition: background 0.3s ease;
+              "
+              onmouseover="this.style.background = '#6d28d9'"
+              onmouseout="this.style.background = '#7c3aed'"
+            >
+              View prototype Here
+            </a>
+            <a
+              href="https://remotecarihers.lovable.app/"
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                background: #fb923c;
+                color: white;
+                padding: 0.75rem 1.5rem;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 500;
+                transition: background 0.3s ease;
+              "
+              onmouseover="this.style.background = '#047857'"
+              onmouseout="this.style.background = '#fb923c'"
+            >
+              View website
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">© 2026 Hannah Asunmo. All rights reserved.</p>
+
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/hannahasunmo"
+              class="social-link"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:hannahasunmo@gmail.com" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      function openModal(img) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+      }
+
+      function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+
+      // Close modal when clicking outside the image
+      document.getElementById("imageModal").onclick = function (event) {
+        if (event.target === this) {
+          closeModal();
+        }
+      };
+
+      // Close modal with ESC key
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeModal();
+        }
+      });
+    </script>
+
+    <!-- Custom js link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

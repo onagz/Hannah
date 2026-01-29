@@ -1,0 +1,2725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Hannah Asunmo - Technical Product Manager.</title>
+    <meta name="title" content="Hannah Asunmo - Technical Product Manager." />
+    <meta
+      name="description"
+      content="I specialize in crafting intuitive, seamless experiences for users and driving business growth."
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+    <link rel="preload" as="image" href="./assets/images/Blog.svg" />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a class="logo">
+          <strong>Hannah Asunmo</strong>
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a class="logo">
+              <strong>Hannah Asunmo</strong>
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about-me" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#skills-tools" class="navbar-link">Skills</a>
+            </li>
+
+            <li>
+              <a href="#project-label" class="navbar-link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:hannahasunmo@gmail.com" class="contact-link"
+              >hannahasunmo@gmail.com</a
+            >
+
+            <a href="tel:001234567890" class="contact-link"
+              >(+234) 8031364612</a
+            >
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a href="https://www.linkedin.com/in/hannahasunmo" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:hannahasunmo@gmail.com" class="social-link">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/Hannah.jpeg"
+                alt="Hannah Asunmo"
+                class="w-110"
+                data-reveal="top"
+              />
+            </figure>
+
+            <div class="hero-content">
+              <h1
+                class="h1 hero-title"
+                data-reveal="top"
+                data-reveal-delay="0.5s"
+                style="
+                  font-size: 5.5rem;
+                  font-weight: 800;
+                  line-height: 1.1;
+                  margin-bottom: 2rem;
+                  text-align: center;
+                  position: relative;
+                "
+              >
+                <span
+                  style="
+                    display: block;
+                    font-size: 4.5rem;
+                    font-weight: 600;
+                    color: #2d3748;
+                    margin-bottom: 0.5rem;
+                    letter-spacing: 0.1em;
+                  "
+                  >Hi, I’m</span
+                >
+                <span
+                  style="
+                    display: block;
+                    background: linear-gradient(
+                      135deg,
+                      #6366f1 0%,
+                      #8b5cf6 25%,
+                      #ec4899 50%,
+                      #f59e0b 75%,
+                      #10b981 100%
+                    );
+                    background-size: 300% 300%;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    animation: gradientShift 4s ease-in-out infinite;
+                    text-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+                    font-weight: 900;
+                    font-size: 6rem;
+                    letter-spacing: 0.05em;
+                  "
+                >
+                  Hannah Asunmo
+                </span>
+                <div
+                  style="
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 120px;
+                    height: 4px;
+                    background: linear-gradient(
+                      90deg,
+                      #6366f1,
+                      #8b5cf6,
+                      #ec4899,
+                      #f59e0b,
+                      #10b981
+                    );
+                    border-radius: 2px;
+                    animation: lineGlow 3s ease-in-out infinite;
+                  "
+                ></div>
+              </h1>
+              <p
+                class="section-text"
+                data-reveal="top"
+                data-reveal-delay="0.75s"
+                style="font-size: 2.2rem; line-height: 1.7"
+              >
+                I turn complex ideas into products that win. I'm strategic about
+                the 'what,' but I always start with the 'who.'
+              </p>
+
+              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+                <a href="./Hannah's Curriculum Vitae.pdf" class="btn btn-primary">View My CV</a>
+
+                <a href="#project-label" class="btn btn-secondary">See My Works</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT ME
+      -->
+
+        <section
+          class="section about-me"
+          id="about-me"
+          aria-label="about-me"
+          style="background: #ffffff; padding: 120px 0"
+        >
+          <div class="container">
+            <div
+              class="about-me-content"
+              style="max-width: 900px; margin: 0 auto"
+            >
+              <!-- Section Header -->
+              <div
+                class="section-header"
+                style="text-align: center; margin-bottom: 4rem"
+              >
+                <h2
+                  class="section-title"
+                  style="
+                    font-size: 3.8rem;
+                    font-weight: 900;
+                    line-height: 1.2;
+                    margin-bottom: 1.5rem;
+                    color: #1a202c;
+                  "
+                >
+                  About Me
+                </h2>
+                <div
+                  class="section-divider"
+                  style="
+                    width: 60px;
+                    height: 3px;
+                    background: #c2185b;
+                    margin: 0 auto;
+                  "
+                ></div>
+              </div>
+
+              <!-- Introduction Paragraph -->
+              <p
+                class="intro-description"
+                style="
+                  font-size: 2.2rem;
+                  line-height: 1.7;
+                  color: #2d3748;
+                  text-align: center;
+                  margin-bottom: 3rem;
+                  max-width: 800px;
+                  margin-left: auto;
+                  margin-right: auto;
+                  font-weight: 500;
+                "
+              >
+                Hello, I’m Hannah Asunmo, a technical product manager with 2+
+                years of experience building impactful digital solutions across
+                health tech, food tech, job tech, and media tech.
+              </p>
+
+              <!-- Main Content -->
+              <div class="about-main" style="margin-bottom: 5rem">
+            
+
+                <p
+                class="intro-description"
+                style="
+                  font-size: 2.2rem;
+                  line-height: 1.7;
+                  color: #2d3748;
+                  text-align: center;
+                  margin-bottom: 3rem;
+                  max-width: 800px;
+                  margin-left: auto;
+                  margin-right: auto;
+                  font-weight: 500;
+                "
+              >
+                I specialize in crafting intuitive, seamless experiences
+                    for users and driving business growth.
+                  My product approach is simple: discover the real problem,
+                  validate quickly, collaborate deeply, and ship solutions that
+                  improve users' everyday experiences.
+              </p>
+
+                <!-- Key Highlights -->
+                <div
+                  class="highlights-grid"
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                    gap: 3rem;
+                    margin-bottom: 4rem;
+                  "
+                >
+                  <div
+                    class="highlight-card"
+                    style="
+                      background: #f7fafc;
+                      border: 1px solid #e2e8f0;
+                      border-radius: 12px;
+                      padding: 2.5rem;
+                      transition: box-shadow 0.3s ease;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-size: 2rem;
+                        font-weight: 900;
+                        color: #1a202c;
+                        margin-bottom: 1.25rem;
+                        line-height: 1.3;
+                      "
+                    >
+                      Beyond Product
+                    </h3>
+                    <p
+                      style="
+                        color: #4a5568;
+                        line-height: 1.7;
+                        margin: 0;
+                        font-size: 1.6rem;
+                      "
+                    >
+                      I lead 28+ young wives at my church creating programs that meet the spiritual,
+                      emotional, career, and health need of women.
+                    </p>
+                  </div>
+
+                  <div
+                    class="highlight-card"
+                    style="
+                      background: #f7fafc;
+                      border: 1px solid #e2e8f0;
+                      border-radius: 12px;
+                      padding: 2.5rem;
+                      transition: box-shadow 0.3s ease;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-size: 2rem;
+                        font-weight: 900;
+                        color: #1a202c;
+                        margin-bottom: 1.25rem;
+                        line-height: 1.3;
+                      "
+                    >
+                      Always Learning
+                    </h3>
+                    <p
+                      style="
+                        color: #4a5568;
+                        line-height: 1.7;
+                        margin: 0;
+                        font-size: 1.6rem;
+                      "
+                    >
+                      Experimenting with AI tools, exploring YouTube for
+                      technical deep dives, and soaking up insights from
+                      transformative books.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quote Section -->
+              <div
+                class="quote-section"
+                style="
+                  background: #f8fafc;
+                  border-radius: 16px;
+                  padding: 3rem;
+                  margin-bottom: 4rem;
+                  border-left: 4px solid #c2185b
+                "
+              >
+                <blockquote
+                  style="
+                    font-size: 2rem;
+                    font-style: italic;
+                    line-height: 1.6;
+                    margin: 0;
+                    color: #2d3748;
+                    text-align: center;
+                  "
+                >
+                  "Curiosity fuels everything I do, it keeps me learning,
+                  growing, and building better."
+                </blockquote>
+              </div>
+
+              <!-- CTA Section -->
+              <div class="cta-section" style="text-align: center">
+                <a
+                  href="#contact"
+                  class="cta-button"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    background: white;
+                    color: hsl(344, 53%, 62%);
+                    border: 2px solid hsl(344, 53%, 62%);
+                    padding: 1.5rem 3.5rem;
+                    border-radius: 50px;
+                    text-decoration: none;
+                    font-weight: 900;
+                    font-size: 1.3rem;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                  "
+                  onmouseover="
+                    this.style.transform = 'translateY(-4px)';
+                    this.style.backgroundColor = 'white';
+                    this.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.15)';
+                    this.style.borderColor = 'hsl(344, 53%, 62%)';
+                    this.style.color = 'hsl(344, 53%, 62%)';
+                  "
+                  onmouseout="
+                    this.style.transform = 'translateY(0)';
+                    this.style.backgroundColor = 'white';
+                    this.style.boxShadow = 'none';
+                    this.style.borderColor = 'hsl(344, 53%, 62%)';
+                    this.style.color = 'hsl(344, 53%, 62%)';
+                  "
+                >
+                  <span style="font-size: 1.4rem"
+                    >Let's Build Something Awesome Together</span
+                  >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile responsive adjustments -->
+          <style>
+            @media (max-width: 768px) {
+              .section-title {
+                font-size: 2.8rem !important;
+              }
+              .intro-description {
+                font-size: 1.8rem !important;
+              }
+              .about-description {
+                font-size: 1.6rem !important;
+              }
+              .highlights-grid {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+              }
+              .highlight-card {
+                padding: 2rem !important;
+              }
+              .highlight-card h3 {
+                font-size: 1.6rem !important;
+              }
+              .highlight-card p {
+                font-size: 1.3rem !important;
+              }
+              .cta-button {
+                font-size: 1.2rem !important;
+                padding: 1.25rem 2.5rem !important;
+              }
+              .cta-button span {
+                font-size: 1.3rem !important;
+              }
+              .quote-section {
+                padding: 2rem !important;
+              }
+              .quote-section blockquote {
+                font-size: 1.6rem !important;
+              }
+            }
+          </style>
+        </section>
+
+        <!--
+        - #SKILLS AND TOOLS
+      -->
+
+        <section
+          class="section skills-tools"
+          id="skills-tools"
+          aria-label="skills-tools"
+          style="
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            padding: 100px 0;
+          "
+        >
+          <div class="container">
+            <div
+              class="skills-tools-content"
+              style="max-width: 1200px; margin: 0 auto"
+            >
+              <!-- Section Header -->
+              <div
+                class="section-header"
+                style="text-align: center; margin-bottom: 4rem"
+              >
+                <h2
+                  class="section-title"
+                  style="
+                    font-size: 4.5rem;
+                    font-weight: 900;
+                    line-height: 1.2;
+                    margin-bottom: 1rem;
+                    color: #1a202c;
+                  "
+                >
+                  SKILLS AND TOOLS
+                </h2>
+                <p
+                  class="section-subtitle"
+                  style="
+                    font-size: 1.8rem;
+                    color: #000000;
+                    font-weight: 500;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  Skills that I use to create world-class products
+                </p>
+                <div
+                  class="section-divider"
+                  style="
+                    width: 80px;
+                    height: 4px;
+                    background: #c2185b;
+                    margin: 0 auto;
+                  "
+                ></div>
+              </div>
+
+              <!-- Skills Grid -->
+              <div
+                class="skills-grid"
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+                  gap: 2.5rem;
+                  margin-bottom: 5rem;
+                "
+              >
+                <div
+                  class="skill-item"
+                  style="
+                    background: white;
+                    border: 2px solid hsl(344, 53%, 62%);
+                    border-radius: 50px;
+                    padding: 2.5rem;
+                    color: hsl(344, 53%, 62%);
+                    font-weight: 900;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                  "
+                  onmouseover="
+                    this.style.transform = 'translateY(-4px)';
+                    this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = 'white';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = 'white';
+                  "
+                  onmouseout="
+                    this.style.transform = 'translateY(0)';
+                    this.style.backgroundColor = 'white';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = '#1a202c';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = '#4a5568';
+                  "
+                >
+                  <div
+                    class="skill-number"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: hsl(344, 53%, 62%);
+                      font-weight: 900;
+                      font-size: 1.5rem;
+                      margin-bottom: 1.5rem;
+                    "
+                  >
+                    <span style="background: hsl(344, 53%, 62%); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">I</span>
+                  </div>
+                  <h3
+                    style="
+                      font-size: 2rem;
+                      font-weight: 900;
+                      color: #1a202c;
+                      margin-bottom: 1rem;
+                      line-height: 1.3;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    Product Strategy and Execution
+                  </h3>
+                  <p
+                    style="
+                      color: #4a5568;
+                      line-height: 1.6;
+                      margin: 0;
+                      font-size: 1.4rem;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    From complex ideas to MVP. I align product vision with
+                    execution to deliver real, measurable value to users.
+                  </p>
+                </div>
+
+                <div
+                  class="skill-item"
+                  style="
+                    background: white;
+                    border: 2px solid hsl(344, 53%, 62%);
+                    border-radius: 50px;
+                    padding: 2.5rem;
+                    color: hsl(344, 53%, 62%);
+                    font-weight: 900;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                  "
+                  onmouseover="
+                    this.style.transform = 'translateY(-4px)';
+                    this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = 'white';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = 'white';
+                  "
+                  onmouseout="
+                    this.style.transform = 'translateY(0)';
+                    this.style.backgroundColor = 'white';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = '#1a202c';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = '#4a5568';
+                  "
+                >
+                  <div
+                    class="skill-number"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: hsl(344, 53%, 62%);
+                      font-weight: 900;
+                      font-size: 1.5rem;
+                      margin-bottom: 1.5rem;
+                    "
+                  >
+                    <span style="background: hsl(344, 53%, 62%); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">II</span>
+                  </div>
+                  <h3
+                    style="
+                      font-size: 2rem;
+                      font-weight: 900;
+                      color: #1a202c;
+                      margin-bottom: 1rem;
+                      line-height: 1.3;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    Data-Driven Decision Making
+                  </h3>
+                  <p
+                    style="
+                      color: #4a5568;
+                      line-height: 1.6;
+                      margin: 0;
+                      font-size: 1.4rem;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    I use data, metrics, and user insights to validate
+                    assumptions, prioritize effectively, and guide product
+                    decisions.
+                  </p>
+                </div>
+
+                <div
+                  class="skill-item"
+                  style="
+                    background: white;
+                    border: 2px solid hsl(344, 53%, 62%);
+                    border-radius: 50px;
+                    padding: 2.5rem;
+                    color: hsl(344, 53%, 62%);
+                    font-weight: 900;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                  "
+                  onmouseover="
+                    this.style.transform = 'translateY(-4px)';
+                    this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = 'white';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = 'white';
+                  "
+                  onmouseout="
+                    this.style.transform = 'translateY(0)';
+                    this.style.backgroundColor = 'white';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = '#1a202c';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = '#4a5568';
+                  "
+                >
+                  <div
+                    class="skill-number"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: hsl(344, 53%, 62%);
+                      font-weight: 900;
+                      font-size: 1.5rem;
+                      margin-bottom: 1.5rem;
+                    "
+                  >
+                    <span style="background: hsl(344, 53%, 62%); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">III</span>
+                  </div>
+                  <h3
+                    style="
+                      font-size: 2rem;
+                      font-weight: 900;
+                      color: #1a202c;
+                      margin-bottom: 1rem;
+                      line-height: 1.3;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    User-Centric Innovation
+                  </h3>
+                  <p
+                    style="
+                      color: #4a5568;
+                      line-height: 1.6;
+                      margin: 0;
+                      font-size: 1.4rem;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    I design solutions around real user needs, continuously
+                    testing and iterating to create intuitive and valuable
+                    experiences.
+                  </p>
+                </div>
+
+                <div
+                  class="skill-item"
+                  style="
+                    background: white;
+                    border: 2px solid hsl(344, 53%, 62%);
+                    border-radius: 50px;
+                    padding: 2.5rem;
+                    color: hsl(344, 53%, 62%);
+                    font-weight: 900;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                  "
+                  onmouseover="
+                    this.style.transform = 'translateY(-4px)';
+                    this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = 'white';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = 'white';
+                  "
+                  onmouseout="
+                    this.style.transform = 'translateY(0)';
+                    this.style.backgroundColor = 'white';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = '#1a202c';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = '#4a5568';
+                  "
+                >
+                  <div
+                    class="skill-number"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: hsl(344, 53%, 62%);
+                      font-weight: 900;
+                      font-size: 1.5rem;
+                      margin-bottom: 1.5rem;
+                    "
+                  >
+                    <span style="background: hsl(344, 53%, 62%); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">IV</span>
+                  </div>
+                  <h3
+                    style="
+                      font-size: 2rem;
+                      font-weight: 900;
+                      color: #1a202c;
+                      margin-bottom: 1rem;
+                      line-height: 1.3;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    Team Leadership and Collaboration
+                  </h3>
+                  <p
+                    style="
+                      color: #4a5568;
+                      line-height: 1.6;
+                      margin: 0;
+                      font-size: 1.4rem;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    With experience managing engineers and designers in product,
+                    I lead by aligning and collaborating across diverse teams.
+                  </p>
+                </div>
+
+                <div
+                  class="skill-item"
+                  style="
+                    background: white;
+                    border: 2px solid hsl(344, 53%, 62%);
+                    border-radius: 50px;
+                    padding: 2.5rem;
+                    color: hsl(344, 53%, 62%);
+                    font-weight: 900;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                  "
+                  onmouseover="
+                    this.style.transform = 'translateY(-4px)';
+                    this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = 'white';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = 'white';
+                  "
+                  onmouseout="
+                    this.style.transform = 'translateY(0)';
+                    this.style.backgroundColor = 'white';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = '#1a202c';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = '#4a5568';
+                  "
+                >
+                  <div
+                    class="skill-number"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: hsl(344, 53%, 62%);
+                      font-weight: 900;
+                      font-size: 1.5rem;
+                      margin-bottom: 1.5rem;
+                    "
+                  >
+                    <span style="background: hsl(344, 53%, 62%); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">V</span>
+                  </div>
+                  <h3
+                    style="
+                      font-size: 2rem;
+                      font-weight: 900;
+                      color: #1a202c;
+                      margin-bottom: 1rem;
+                      line-height: 1.3;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    Project Management
+                  </h3>
+                  <p
+                    style="
+                      color: #4a5568;
+                      line-height: 1.6;
+                      margin: 0;
+                      font-size: 1.4rem;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    Driving software projects from planning to launch with
+                    structure, speed, and measurable impact.
+                  </p>
+                </div>
+
+                <div
+                  class="skill-item"
+                  style="
+                    background: white;
+                    border: 2px solid hsl(344, 53%, 62%);
+                    border-radius: 50px;
+                    padding: 2.5rem;
+                    color: hsl(344, 53%, 62%);
+                    font-weight: 900;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                  "
+                  onmouseover="
+                    this.style.transform = 'translateY(-4px)';
+                    this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = 'white';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = 'white';
+                  "
+                  onmouseout="
+                    this.style.transform = 'translateY(0)';
+                    this.style.backgroundColor = 'white';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = '#1a202c';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = '#4a5568';
+                  "
+                >
+                  <div
+                    class="skill-number"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: hsl(344, 53%, 62%);
+                      font-weight: 900;
+                      font-size: 1.5rem;
+                      margin-bottom: 1.5rem;
+                    "
+                  >
+                    <span style="background: hsl(344, 53%, 62%); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">VI</span>
+                  </div>
+                  <h3
+                    style="
+                      font-size: 2rem;
+                      font-weight: 900;
+                      color: #1a202c;
+                      margin-bottom: 1rem;
+                      line-height: 1.3;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    Business Acumen
+                  </h3>
+                  <p
+                    style="
+                      color: #4a5568;
+                      line-height: 1.6;
+                      margin: 0;
+                      font-size: 1.4rem;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    With hands-on entrepreneurship experience, I bring
+                    cross-industry business exposure and a proven
+                    problem-solving approach to make strategic decisions that
+                    drive revenue growth and business value.
+                  </p>
+                </div>
+
+                <div
+                  class="skill-item"
+                  style="
+                    background: white;
+                    border: 2px solid hsl(344, 53%, 62%);
+                    border-radius: 50px;
+                    padding: 2.5rem;
+                    color: hsl(344, 53%, 62%);
+                    font-weight: 900;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                  "
+                  onmouseover="
+                    this.style.transform = 'translateY(-4px)';
+                    this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = 'white';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = 'white';
+                  "
+                  onmouseout="
+                    this.style.transform = 'translateY(0)';
+                    this.style.backgroundColor = 'white';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = '#1a202c';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = '#4a5568';
+                  "
+                >
+                  <div
+                    class="skill-number"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: hsl(344, 53%, 62%);
+                      font-weight: 900;
+                      font-size: 1.5rem;
+                      margin-bottom: 1.5rem;
+                    "
+                  >
+                    <span style="background: hsl(344, 53%, 62%); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">VII</span>
+                  </div>
+                  <h3
+                    style="
+                      font-size: 2rem;
+                      font-weight: 900;
+                      color: #1a202c;
+                      margin-bottom: 1rem;
+                      line-height: 1.3;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    AI and Emerging Tech
+                  </h3>
+                  <p
+                    style="
+                      color: #4a5568;
+                      line-height: 1.6;
+                      margin: 0;
+                      font-size: 1.4rem;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    Leveraging AI, and no-code tools to validate ideas quickly
+                    and reimagine product experiences.
+                  </p>
+                </div>
+
+                <div
+                  class="skill-item"
+                  style="
+                    background: white;
+                    border: 2px solid hsl(344, 53%, 62%);
+                    border-radius: 50px;
+                    padding: 2.5rem;
+                    color: hsl(344, 53%, 62%);
+                    font-weight: 900;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                  "
+                  onmouseover="
+                    this.style.transform = 'translateY(-4px)';
+                    this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = 'white';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = 'white';
+                  "
+                  onmouseout="
+                    this.style.transform = 'translateY(0)';
+                    this.style.backgroundColor = 'white';
+                    if (this.querySelector('h3'))
+                      this.querySelector('h3').style.color = '#1a202c';
+                    if (this.querySelector('p'))
+                      this.querySelector('p').style.color = '#4a5568';
+                  "
+                >
+                  <div
+                    class="skill-number"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      color: hsl(344, 53%, 62%);
+                      font-weight: 900;
+                      font-size: 1.5rem;
+                      margin-bottom: 1.5rem;
+                    "
+                  >
+                    <span style="background: hsl(344, 53%, 62%); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">VIII</span>
+                  </div>
+                  <h3
+                    style="
+                      font-size: 2rem;
+                      font-weight: 900;
+                      color: #1a202c;
+                      margin-bottom: 1rem;
+                      line-height: 1.3;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    Technical Knowledge
+                  </h3>
+                  <p
+                    style="
+                      color: #4a5568;
+                      line-height: 1.6;
+                      margin: 0;
+                      font-size: 1.4rem;
+                      transition: color 0.3s ease;
+                    "
+                  >
+                    From system design to API testing, I possess hands-on
+                    technical knowledge that enables me to collaborate
+                    effectively with engineering teams, evaluate technical
+                    feasibility, and make informed product decisions throughout
+                    the development lifecycle.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tools Section -->
+              <div
+                class="tools-section"
+                style="
+                  background: white;
+                  border-radius: 20px;
+                  padding: 3rem;
+                  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                  border: 2px solid #e2e8f0;
+                "
+              >
+                <div
+                  class="tools-header"
+                  style="text-align: center; margin-bottom: 2.5rem"
+                >
+                  <h3
+                    style="
+                      font-size: 2rem;
+                      font-weight: 900;
+                      color: #1a202c;
+                      margin-bottom: 1rem;
+                    "
+                  >
+                    TOOLS
+                  </h3>
+                  <div
+                    class="tools-subtitle"
+                    style="
+                      width: 60px;
+                      height: 3px;
+                      background: #c2185b;
+                      margin: 0 auto;
+                    "
+                  ></div>
+                </div>
+
+                <div
+                  class="tools-list"
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 1.5rem;
+                  "
+                >
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    JIRA
+                  </div>
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    Confluence
+                  </div>
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    Postman
+                  </div>
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    Balsamiq
+                  </div>
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    Figma
+                  </div>
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    Claude
+                  </div>
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    Loveable
+                  </div>
+                 
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    Microsoft 365 Suite
+                  </div>
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    Google Colab
+                  </div>
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    Slack
+                  </div>
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    Mixpanel
+                  </div>
+                  <div
+                    class="tool-item"
+                    style="
+                      background: white;
+                      border: 2px solid hsl(344, 53%, 62%);
+                      border-radius: 50px;
+                      padding: 1.3rem 2rem;
+                      text-align: center;
+                      font-weight: 900;
+                      font-size: 1.4rem;
+                      color: hsl(344, 53%, 62%);
+                      transition: all 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="
+                      this.style.transform = 'translateY(-4px)';
+                      this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                      this.style.color = 'white';
+                    "
+                    onmouseout="
+                      this.style.transform = 'translateY(0)';
+                      this.style.backgroundColor = 'white';
+                      this.style.color = 'hsl(344, 53%, 62%)';
+                    "
+                  >
+                    Google Forms
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile responsive adjustments -->
+          <style>
+            @media (max-width: 768px) {
+              .section-title {
+                font-size: 2.5rem !important;
+              }
+              .section-subtitle {
+                font-size: 1.2rem !important;
+                color: #000000 !important;
+              }
+              .skills-grid {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+              }
+              .skill-item {
+                padding: 2rem !important;
+              }
+              .skill-item h3 {
+                font-size: 1.4rem !important;
+              }
+              .skill-item p {
+                font-size: 1.2rem !important;
+              }
+              .tools-list {
+                grid-template-columns: repeat(
+                  auto-fit,
+                  minmax(150px, 1fr)
+                ) !important;
+                gap: 1rem !important;
+              }
+              .tool-item {
+                padding: 0.75rem 1rem !important;
+                font-size: 0.9rem !important;
+              }
+            }
+          </style>
+        </section>
+
+        <!-- 
+        - #PROJECT
+      -->
+
+        <section class="section project" aria-labelledby="project-label">
+          <div class="container">
+            <div class="title-wrapper" data-reveal="top">
+              <div>
+                <h2 class="h2 section-title" id="project-label">
+                  Latest Projects
+                </h2>
+
+                <p class="section-text" style="font-size: 1.3rem">
+                  Check out some of my latest projects with creative ideas.
+                </p>
+              </div>
+
+              <!-- <a href="#" class="btn btn-secondary">See All Projects</a> -->
+            </div>
+
+            <ul class="grid-list">
+              <li>
+                <div
+                  class="project-card project-card-1"
+                  style="background-color: #d7f8eb"
+                >
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #096306">
+                      Digital Health
+                    </p>
+
+                    <h3 class="h3 card-title" style="font-size: 1.8rem">
+                      HealthPro
+                    </h3>
+
+                    <p class="card-text" style="font-size: 1.2rem">
+                      HealthPro, a digital health and wellness mobile app
+                      designed to transform complex health data into
+                      personalized, actionable wellness experiences.
+                    </p>
+
+                    <div
+                      class="project-actions"
+                      style="display: flex; gap: 1rem; margin-top: 1.5rem"
+                    >
+                      <a
+                        href="healthpro-case-study.html"
+                        class="project-btn-circle"
+                        style="
+                          width: 50px;
+                          height: 50px;
+                          background: linear-gradient(45deg, #920410);
+                          border-radius: 50%;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          color: white;
+                          text-decoration: none;
+                          transition: all 0.3s ease;
+                          box-shadow: 0 4px 12px rgba(3, 105, 161, 0.3);
+                        "
+                        onmouseover="
+                          this.style.transform = 'translateY(-2px)';
+                          this.style.boxShadow =
+                            '0 6px 20px rgba(3, 105, 161, 0.4)';
+                        "
+                        onmouseout="
+                          this.style.transform = 'translateY(0)';
+                          this.style.boxShadow =
+                            '0 4px 12px rgba(3, 105, 161, 0.3)';
+                        "
+                        title="View Case Study"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                          ></path>
+                          <polyline points="14,2 14,8 20,8"></polyline>
+                          <line x1="16" y1="13" x2="8" y2="13"></line>
+                          <line x1="16" y1="17" x2="8" y2="17"></line>
+                          <polyline points="10,9 9,9 8,9"></polyline>
+                        </svg>
+                      </a>
+
+                      <a
+                        href="https://healthpro1.lovable.app/"
+                        class="project-btn-circle"
+                        style="
+                          width: 50px;
+                          height: 50px;
+                          background: linear-gradient(45deg, #059669, #10b981);
+                          border-radius: 50%;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          color: white;
+                          text-decoration: none;
+                          transition: all 0.3s ease;
+                          box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+                        "
+                        onmouseover="
+                          this.style.transform = 'translateY(-2px)';
+                          this.style.boxShadow =
+                            '0 6px 20px rgba(5, 150, 105, 0.4)';
+                        "
+                        onmouseout="
+                          this.style.transform = 'translateY(0)';
+                          this.style.boxShadow =
+                            '0 4px 12px rgba(5, 150, 105, 0.3)';
+                        "
+                        title="Visit App"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                          ></path>
+                          <polyline points="15,3 21,3 21,9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/project-1.png"
+                      width="650"
+                      height="370"
+                      loading="lazy"
+                      alt="HealthPro Mobile App"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="project-card project-card-2"
+                  style="background-color: #f8d4dc"
+                >
+                  <div class="card-content" data-reveal="right">
+                    <p class="card-tag" style="color: #4a0416">
+                      Career Platform
+                    </p>
+
+                    <h3 class="h3 card-title" style="font-size: 1.8rem">
+                      Remote Carihers
+                    </h3>
+
+                    <p class="card-text" style="font-size: 1.2rem">
+                      Remote Carihers, a verified job and resources web app
+                      connecting women with flexible remote opportunities and
+                      skill-building resources.
+                    </p>
+
+                    <div
+                      class="project-actions"
+                      style="display: flex; gap: 1rem; margin-top: 1.5rem"
+                    >
+                      <a
+                        href="remote-carihers-case-study.html"
+                        class="project-btn-circle"
+                        style="
+                          width: 50px;
+                          height: 50px;
+                          background: linear-gradient(45deg, #059669, #10b981);
+                          border-radius: 50%;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          color: white;
+                          text-decoration: none;
+                          transition: all 0.3s ease;
+                          box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+                        "
+                        onmouseover="
+                          this.style.transform = 'translateY(-2px)';
+                          this.style.boxShadow =
+                            '0 6px 20px rgba(5, 150, 105, 0.4)';
+                        "
+                        onmouseout="
+                          this.style.transform = 'translateY(0)';
+                          this.style.boxShadow =
+                            '0 4px 12px rgba(5, 150, 105, 0.3)';
+                        "
+                        title="View Case Study"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                          ></path>
+                          <polyline points="14,2 14,8 20,8"></polyline>
+                          <line x1="16" y1="13" x2="8" y2="13"></line>
+                          <line x1="16" y1="17" x2="8" y2="17"></line>
+                          <polyline points="10,9 9,9 8,9"></polyline>
+                        </svg>
+                      </a>
+
+                      <a
+                        href="https://remotecarihers.lovable.app"
+                        class="project-btn-circle"
+                        style="
+                          width: 50px;
+                          height: 50px;
+                          background: linear-gradient(45deg, #920410);
+                          border-radius: 50%;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          color: white;
+                          text-decoration: none;
+                          transition: all 0.3s ease;
+                          box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+                        "
+                        onmouseover="
+                          this.style.transform = 'translateY(-2px)';
+                          this.style.boxShadow =
+                            '0 6px 20px rgba(124, 58, 237, 0.4)';
+                        "
+                        onmouseout="
+                          this.style.transform = 'translateY(0)';
+                          this.style.boxShadow =
+                            '0 4px 12px rgba(124, 58, 237, 0.3)';
+                        "
+                        title="Visit App"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                          ></path>
+                          <polyline points="15,3 21,3 21,9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="left">
+                    <img
+                      src="./assets/images/project-2.png"
+                      width="600"
+                      height="367"
+                      loading="lazy"
+                      alt="Remote Carihers Web App"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <!-- <li>
+              <div class="project-card project-card-3" style="background-color: #f5faf7">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #7cb798">Web Design</p>
+
+                  <h3 class="h3 card-title">Missio Theme</h3>
+
+                  <p class="card-text">
+                    Maecenas faucibus mollis interdum sed posuere porta consectetur cursus porta lobortis. Scelerisque
+                    id ligula felis.
+                  </p>
+
+                  <a href="#" class="btn-text" style="color: #7cb798">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project-3.png" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-4" style="background-color: #fcf4f6">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #d16b86">Mobile Design</p>
+
+                  <h3 class="h3 card-title">Storage App</h3>
+
+                  <p class="card-text">
+                    Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula
+                    porta felis euismod semper.
+                  </p>
+
+                  <a href="#" class="btn-text" style="color: #d16b86">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project-4.png" width="620" height="370" loading="lazy" alt="Mobile Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li> -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- More Projects Button -->
+        <div
+          class="more-projects-section"
+          style="text-align: center; padding: 3rem 0; background: #f8fafc"
+        >
+          <div
+            class="container"
+            style="display: flex; justify-content: center; align-items: center; gap: 1rem"
+          >
+            <a
+              href="https://medium.com/@hannahasunmo/product-management-case-study-meal-customization-feature-on-choprite-mobile-app-1a0d38f72f92"
+              class="btn btn-primary"
+              style="
+                background: white;
+                border: 2px solid hsl(344, 53%, 62%);
+                padding: 1.5rem 3rem;
+                border-radius: 50px;
+                color: hsl(344, 53%, 62%);
+                text-decoration: none;
+                font-weight: 900;
+                font-size: 1.5rem;
+                transition: all 0.3s ease;
+                cursor: pointer;
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-4px)';
+                this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                this.style.color = 'white';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.backgroundColor = 'white';
+                this.style.color = 'hsl(344, 53%, 62%)';
+              "
+            >
+              View More Projects I
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="margin-left: 0.5rem"
+              >
+                <path d="M7 17l10-10"></path>
+                <path d="M7 7h10v10"></path>
+              </svg>
+            </a>
+            <a
+              href="https://medium.com/@hannahasunmo/product-management-a-case-study-for-a-mobile-app-movie-buzz-84230fbef6f2"
+              class="btn btn-primary"
+              style="
+                background: white;
+                border: 2px solid hsl(344, 53%, 62%);
+                padding: 1.5rem 3rem;
+                border-radius: 50px;
+                color: hsl(344, 53%, 62%);
+                text-decoration: none;
+                font-weight: 900;
+                font-size: 1.5rem;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                margin-left: 1rem;
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-4px)';
+                this.style.backgroundColor = 'hsl(344, 53%, 62%)';
+                this.style.color = 'white';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.backgroundColor = 'white';
+                this.style.color = 'hsl(344, 53%, 62%)';
+              "
+            >
+              View More Projects II
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="margin-left: 0.5rem"
+              >
+                <path d="M7 17l10-10"></path>
+                <path d="M7 7h10v10"></path>
+              </svg>
+            </a>
+          </>
+        </div>
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section class="section contact" id="contact" aria-label="contact">
+          <div class="container">
+            <div class="contact-card">
+              <div class="contact-content" data-reveal="left">
+
+                <h2 class="h2 section-title" style="font-size: 2.5rem">
+                  If you like what you see, let's work together.
+                </h2>
+
+                <p class="section-text" style="font-size: 1.3rem">
+                  I bring rapid solutions to make the life of my clients easier.
+                  Have any questions? Reach out to me from this contact form and
+                  I will get back to you shortly.
+                </p>
+              </div>
+
+              <form action="https://formsubmit.co/emmanzyonagz@gmail.com" method="POST" class="contact-form" data-reveal="right">
+                <input type="hidden" name="_subject" value="New portfolio contact form submission" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="https://hannahasunmo.github.io/#contact" />
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name *"
+                    required
+                    class="input-field"
+                  />
+
+                  <input
+                    type="email"
+                    name="email_address"
+                    placeholder="Email *"
+                    required
+                    class="input-field"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message *"
+                  required
+                  class="input-field"
+                ></textarea>
+
+                <button type="submit" class="btn btn-secondary">
+                  Send message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">© 2026 Hannah Asunmo. All rights reserved.</p>
+
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/hannahasunmo"
+              class="social-link"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:hannahasunmo@gmail.com" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      @keyframes gradientShift {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      @keyframes lineGlow {
+        0%,
+        100% {
+          opacity: 0.7;
+          transform: translateX(-50%) scaleX(0.8);
+        }
+        50% {
+          opacity: 1;
+          transform: translateX(-50%) scaleX(1.2);
+        }
+      }
+
+      .hero-banner img {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+
+      html {
+        font-size: 70%;
+      }
+
+      @media (max-width: 768px) {
+        html {
+          font-size: 65%;
+        }
+      }
+
+      /* ===== COMPREHENSIVE MOBILE RESPONSIVE STYLES ===== */
+
+      /* Mobile responsive for hero title */
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 3rem !important;
+        }
+        .hero-title span:first-child {
+          font-size: 3.5rem !important;
+        }
+        .hero-title span:last-child {
+          font-size: 4.8rem !important;
+        }
+      }
+
+      /* Header Mobile Styles */
+      @media (max-width: 768px) {
+        .header {
+          padding: 1.5rem 1rem !important;
+        }
+
+        .logo {
+          font-size: 1.4rem !important;
+        }
+
+        .navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background: rgba(255, 255, 255, 0.98);
+          backdrop-filter: blur(20px);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transform: translateX(-100%);
+          transition: transform 0.3s ease;
+          z-index: 1000;
+          padding: 3rem 2.5rem;
+          color: #1a202c;
+        }
+
+        .navbar.active {
+          transform: translateX(0);
+        }
+
+        .navbar-top {
+          position: absolute;
+          top: 2rem;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 1.5rem;
+        }
+
+        .navbar-list {
+          flex-direction: column;
+          gap: 2rem;
+          text-align: center;
+          margin: 3rem 0;
+        }
+
+        .navbar-link {
+          font-size: 1.4rem !important;
+          padding: 0.5rem 1rem;
+          display: block;
+          color: #1a202c !important;
+          font-weight: 600;
+        }
+
+        .wrapper {
+          text-align: center;
+          margin-top: 2rem;
+        }
+
+        .contact-link {
+          font-size: 1.5rem !important;
+          display: block;
+          margin-bottom: 0.75rem;
+        }
+
+        .social-list {
+          justify-content: center;
+          margin-top: 2rem;
+        }
+
+        .nav-open-btn,
+        .nav-close-btn {
+          display: block !important;
+          width: 40px;
+          height: 40px;
+          background: hsl(344, 53%, 62%);
+          border: none;
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .nav-open-btn ion-icon,
+        .nav-close-btn ion-icon {
+          display: block;
+          margin: 0 auto;
+          line-height: 1;
+        }
+
+        .navbar .contact-link,
+        .navbar .social-link {
+          color: #1a202c;
+        }
+
+        .nav-open-btn ion-icon {
+          display: block;
+          margin: 0 auto;
+        }
+
+        .nav-open-btn:hover,
+        .nav-close-btn:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      /* Hero Section Mobile */
+      @media (max-width: 768px) {
+      .hero {
+        padding: 10rem 1rem 4rem !important;
+        text-align: center;
+      }
+
+        .hero-content {
+          margin-top: 1rem;
+        }
+
+        .hero-title {
+          font-size: 3rem !important;
+          margin-bottom: 1.5rem !important;
+        }
+
+        .hero-title span:first-child {
+          font-size: 1.8rem !important;
+          margin-bottom: 0.3rem !important;
+        }
+
+        .hero-title span:last-child {
+          font-size: 2.8rem !important;
+        }
+
+        .hero-banner img {
+          width: 200px !important;
+          height: auto !important;
+          border-radius: 50% !important;
+          margin: 0 auto 1rem !important;
+        }
+
+        .section-text {
+          font-size: 1.8rem !important;
+          line-height: 1.6 !important;
+          max-width: 100% !important;
+        }
+
+        .btn-wrapper {
+          flex-direction: column;
+          gap: 1rem !important;
+          margin-top: 2rem;
+        }
+
+        .btn {
+          width: 100% !important;
+          max-width: 280px !important;
+          margin: 0 auto !important;
+          font-size: 1.5rem !important;
+          padding: 1.2rem 1.9rem !important;
+        }
+      }
+
+      /* About Section Mobile */
+      @media (max-width: 768px) {
+        .about-me {
+          padding: 4rem 1rem !important;
+        }
+
+        .about-me-content {
+          max-width: 100% !important;
+          margin: 0 !important;
+        }
+
+        .section-title {
+          font-size: 2.8rem !important;
+        }
+
+        .intro-description {
+          font-size: 1.3rem !important;
+          padding: 0 1rem;
+        }
+
+        .about-description {
+          font-size: 1.4rem !important;
+          padding: 0 1rem;
+          text-align: center;
+        }
+
+        .highlights-grid {
+          grid-template-columns: 1fr !important;
+          gap: 2rem !important;
+        }
+
+        .highlight-card {
+          padding: 2rem !important;
+        }
+
+        .highlight-card h3 {
+          font-size: 1.6rem !important;
+        }
+
+        .highlight-card p {
+          font-size: 1.3rem !important;
+        }
+
+        .quote-section {
+          padding: 2rem 1rem !important;
+        }
+
+        .quote-section blockquote {
+          font-size: 1.6rem !important;
+        }
+
+        .cta-button {
+          padding: 1.25rem 2.5rem !important;
+          font-size: 1.2rem !important;
+        }
+
+        .cta-button span {
+          font-size: 1.3rem !important;
+        }
+      }
+
+      /* Skills Section Mobile */
+      @media (max-width: 768px) {
+        .skills-tools {
+          padding: 4rem 1rem !important;
+        }
+
+        .skills-tools-content {
+          max-width: 100% !important;
+          margin: 0 !important;
+        }
+
+        .section-title {
+          font-size: 2.5rem !important;
+        }
+
+        .section-subtitle {
+          font-size: 1.2rem !important;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr !important;
+          gap: 2rem !important;
+        }
+
+        .skill-item {
+          padding: 2rem !important;
+          border-radius: 50px !important;
+        }
+
+        .skill-item h3 {
+          font-size: 1.7rem !important;
+        }
+
+        .skill-item p {
+          font-size: 1.2rem !important;
+        }
+
+        .tools-list {
+          grid-template-columns: repeat(
+            auto-fit,
+            minmax(150px, 1fr)
+          ) !important;
+          gap: 1rem !important;
+        }
+
+        .tool-item {
+          padding: 1rem 1.3rem !important;
+          font-size: 1.2rem !important;
+          border-radius: 50px !important;
+        }
+      }
+
+      /* Projects Section Mobile */
+      @media (max-width: 768px) {
+        .project {
+          padding: 4rem 1rem !important;
+        }
+
+        .title-wrapper {
+          text-align: center;
+        }
+
+        .grid-list {
+          gap: 3rem;
+        }
+
+        .project-card {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .card-content {
+          order: 2;
+          padding: 2rem 1rem;
+        }
+
+        .card-banner {
+          order: 1;
+          margin-bottom: 2rem;
+        }
+
+        .card-banner img {
+          width: 100% !important;
+          max-width: 400px !important;
+          height: auto !important;
+        }
+
+        .card-title {
+          font-size: 2rem !important;
+        }
+
+        .card-text {
+          font-size: 1.1rem !important;
+        }
+
+        .project-actions {
+          justify-content: center !important;
+          margin-top: 1.5rem !important;
+        }
+
+        .btn-secondary {
+          font-size: 1.2rem !important;
+        }
+      }
+
+      /* Contact Section Mobile */
+      @media (max-width: 768px) {
+        .contact {
+          padding: 4rem 1rem !important;
+        }
+
+        .contact-card {
+          flex-direction: column;
+          text-align: center;
+          gap: 3rem;
+        }
+
+        .contact-content {
+          text-align: center;
+        }
+
+        .contact-form {
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+
+        .input-wrapper {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .input-field {
+          width: 100% !important;
+        }
+
+        .contact .section-title {
+          font-size: 2.8rem !important;
+        }
+      }
+
+      /* Footer Mobile */
+      @media (max-width: 768px) {
+        .footer {
+          padding: 2rem 1rem !important;
+          text-align: center;
+        }
+
+        .social-list {
+          justify-content: center;
+          margin-top: 1rem;
+        }
+      }
+
+      /* General Mobile Improvements */
+      @media (max-width: 768px) {
+        .container {
+          padding: 0 1rem !important;
+        }
+
+        .section {
+          padding: 4rem 1rem !important;
+        }
+
+        .w-100 {
+          width: 100% !important;
+        }
+
+        .w-110 {
+          width: 110% !important;
+          max-width: 300px !important;
+        }
+
+        /* Better touch targets */
+        .btn,
+        .project-btn-circle,
+        .tool-item,
+        .social-link {
+          min-height: 44px !important;
+          min-width: 44px !important;
+        }
+
+        /* Improved text readability */
+        p,
+        span,
+        div {
+          line-height: 1.6 !important;
+        }
+
+        /* Better spacing for mobile */
+        .section-text {
+          margin-bottom: 2rem !important;
+        }
+      }
+
+      /* Extra small screens (phones) */
+      @media (max-width: 480px) {
+        .hero {
+          padding: 8rem 1rem 3rem !important;
+        }
+
+        .hero-title {
+          font-size: 2.5rem !important;
+        }
+
+        .hero-title span:first-child {
+          font-size: 3.2rem !important;
+        }
+
+        .hero-title span:last-child {
+          font-size: 4.5rem !important;
+        }
+
+        .hero-banner img {
+          width: 150px !important;
+        }
+
+        .section-title {
+          font-size: 2.2rem !important;
+          line-height: 1.2 !important;
+        }
+
+        .about-me,
+        .skills-tools,
+        .project,
+        .contact {
+          padding: 3rem 1rem !important;
+        }
+
+        .highlights-grid,
+        .skills-grid {
+          gap: 1.5rem !important;
+        }
+
+        .highlight-card,
+        .skill-item {
+          padding: 1.5rem !important;
+          border-radius: 50px !important;
+        }
+
+        .tools-list {
+          grid-template-columns: repeat(
+            auto-fit,
+            minmax(120px, 1fr)
+          ) !important;
+          gap: 0.75rem !important;
+        }
+
+        .tool-item {
+          padding: 0.8rem 1rem !important;
+          font-size: 1rem !important;
+          border-radius: 50px !important;
+        }
+
+        .btn {
+          padding: 0.8rem 1.5rem !important;
+          font-size: 1.2rem !important;
+        }
+
+        .project-card {
+          gap: 2rem;
+        }
+
+        .card-title {
+          font-size: 2rem !important;
+        }
+
+        .card-text {
+          font-size: 1.2rem !important;
+        }
+
+        .contact-card {
+          gap: 2rem;
+        }
+
+        .intro-description {
+          font-size: 1.6rem !important;
+        }
+
+        .more-projects-section .container {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .more-projects-section .btn {
+          font-size: 1.2rem !important;
+        }
+      }
+    </style>
+  </body>
+</html>
